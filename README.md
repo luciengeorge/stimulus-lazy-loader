@@ -13,9 +13,9 @@ application.register("lazy-loader", LazyLoader);
 
 ## Usage
 ```html
-    <div data-controller="lazy-loader">
-        <img src="placeholder.jpg" data-lazy-loader-target="image" data-src="https://via.placeholder.com/150" />
-    </div
+<div data-controller="lazy-loader">
+    <img src="placeholder.jpg" data-lazy-loader-target="image" data-src="https://via.placeholder.com/150" />
+</div
 ```
 
 ## Configuration
