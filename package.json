@@ -1,11 +1,20 @@
 {
   "name": "stimulus-lazy-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "StimulusJS controller to lazy load images",
   "main": "dist/stimulus-lazy-loader.js",
   "source": "src/index.js",
   "author": "Lucien George <luciengeorge95@gmail.com>",
-  "keywords": ["stimulus", "stimulusjs", "stimulus controller", "lazy", "load", "images", "lazy load", "lazy laod images"],
+  "keywords": [
+    "stimulus",
+    "stimulusjs",
+    "stimulus controller",
+    "lazy",
+    "load",
+    "images",
+    "lazy load",
+    "lazy laod images"
+  ],
   "homepage": "https://github.com/lucien-george/stimulus-lazy-loader",
   "bugs": {
     "url": "https://github.com/lucien-george/stimulus-lazy-loader/issues"
