@@ -20,5 +20,5 @@ application.register("lazy-loader", LazyLoader);
 
 ## Configuration
 **Attribute** | **Default** | **Description** | **Optional**
-------------- | ----------- | --------------- | ------------
+------------------------------------ | ---------------------- | --------------- | ------------
 `data-lazy-loader-root-margin-value` | `"0px 0px -200px 0px"` | Margin around the root. Can have values similar to the CSS margin property. This set of values serves to grow or shrink each side of the root element's bounding box before computing intersections. | ✅
