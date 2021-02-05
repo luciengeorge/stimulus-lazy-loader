@@ -2,6 +2,9 @@ import { Controller } from 'stimulus';
 
 export default class extends Controller {
   static targets = [ 'image' ];
+  static values = {
+    rootMargin: String
+  }
 
   connect() {
     const observer = new IntersectionObserver(
@@ -11,7 +14,11 @@ export default class extends Controller {
         observer.unobserve(entry.target);
       });
     },
-    { rootMargin: "0px 0px -200px 0px" });
+    { rootMargin: this.rootMargin });
     this.imageTargets.forEach(target => observer.observe(target));
+  }
+
+  get rootMargin() {
+    this.hasRootMarginValue ? this.rootMarginValue : "0px 0px -200px 0px";
   }
 }

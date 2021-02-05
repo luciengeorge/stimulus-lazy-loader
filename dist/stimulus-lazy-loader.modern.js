@@ -1,2 +1,2 @@
-import{Controller as e}from"stimulus";class t extends e{connect(){const e=new IntersectionObserver((e,t)=>{e.forEach(e=>{e.target.src=e.target.dataset.src,t.unobserve(e.target)})},{rootMargin:"0px 0px -200px 0px"});this.imageTargets.forEach(t=>e.observe(t))}}t.targets=["image"];export default t;
+import{Controller as t}from"stimulus";class r extends t{connect(){const t=new IntersectionObserver((t,r)=>{t.forEach(t=>{t.target.src=t.target.dataset.src,r.unobserve(t.target)})},{rootMargin:this.rootMargin});this.imageTargets.forEach(r=>t.observe(r))}get rootMargin(){}}r.targets=["image"],r.values={rootMargin:String};export default r;
 //# sourceMappingURL=stimulus-lazy-loader.modern.js.map
