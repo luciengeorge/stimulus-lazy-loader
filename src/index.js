@@ -1,9 +1,10 @@
 import { Controller } from 'stimulus';
 
 export default class extends Controller {
-  static targets = [ 'image' ];
+  static targets = [ 'image', 'root' ];
   static values = {
-    rootMargin: String
+    rootMargin: String,
+    threshold: Array
   }
 
   connect() {
@@ -14,11 +15,19 @@ export default class extends Controller {
         observer.unobserve(entry.target);
       });
     },
-    { rootMargin: this.rootMargin });
+    { root: this.root, rootMargin: this.rootMargin, threshold: this.threshold });
     this.imageTargets.forEach(target => observer.observe(target));
   }
 
   get rootMargin() {
-    this.hasRootMarginValue ? this.rootMarginValue : "0px 0px -200px 0px";
+    return this.hasRootMarginValue ? this.rootMarginValue : "0px";
+  }
+
+  get root() {
+    return this.hasRootTarget ? this.rootTarget : null;
+  }
+
+  get threshold() {
+    return this.hasThresHoldValue ? this.thresholdValue : [ 0.0 ];
   }
 }
