@@ -1,7 +1,7 @@
 {
   "name": "stimulus-lazy-loader",
   "type": "module",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "description": "StimulusJS controller to lazy load images",
   "main": "dist/stimulus-lazy-loader.js",
   "source": "src/index.js",
